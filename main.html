@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 
   <head>
-    <title>My Resume</title>
-	<meta charset= "utf-8"/>
+	  <title>My Resume</title>
+	  <meta charset= "utf-8"/>
+	  <link href="main.css" media="all" rel="stylesheet">
+
   </head>
 
 
   <body>
-  
+
       <header>
-		   <img src="img/kadri.JFIF" alt="profile picture" title="My picture" />
-		   <h2>Meriem KADRI</h2>
-		       <p> Apprenticeship Web Development <br/> 79 Boulevard Victor Hugo 59000 Lille <br/> merya.kadri@gmail.com <br/> 06.50.12.52.67 </p>
-      </header>
+		  <img src="img/kadri.JFIF" alt="profile picture" title="My picture" />
+		  <h1>Meriem KADRI</h1>
+		  <p id="greytitle"> Apprenticeship Web Development </p> <br/>
+		  <p>Lille, Nord Pas-de-Calais, France  <br/> merya.kadri@gmail.com <br/> 06.5x.1x.5x.6x </p>
+	  </header>
 	
 	  <article>
-	
-		  <section id="history">
-			  <h3>My History & Profile</h3>
+		  <h3>About Me</h3>
+
+	      <!-- presentation text-->
+		  <section>
+			  <h2>My History & Profile</h2>
 			      <p>
 						After several years of studies, particularly in economics and visual communication,
 						I wanted to retrain in IT development, my first passion.
@@ -30,33 +35,41 @@
 				  </p>
 		  </section>
 
+		  <!-- skillset development and software-->
 
+		  <section id="skills">
 
-		  <section id="skillset">
-
-			  <h3>Skillset</h3>
-			      <h5> Development </h5>
-					  <ul>
-						  <li> Python</li>
-						  <li> Html/Css</li>
-						  <li> Bulma</li>
-						  <li> Linux</li>
-						  <li> Docker</li>
-
+				  <h2>Skillset</h2>
+			      <div id="bloc1">
+					  <ul >
+						  <li> <h4>Development</h4>
+							  <ul>
+								  <li> Python</li>
+								  <li> Html/Css</li>
+								  <li> Bulma</li>
+								  <li> Linux</li>
+								  <li> Docker</li>
+							  </ul>
+						  </li>
 					  </ul>
+				  </div>
+			      <div id="bloc2">
+					  <ul >
+						  <li> <h4>Software</h4>
+							  <ol>
+								  <li> Adobe Photoshop</li>
+								  <li> Adobe indesign</li>
+								  <li> Git </li>
+							  </ol>
+						  </li>
+					  </ul>
+                  </div>
+		  </section>
 
-			      <h5> Software </h5>
-					  <ol>
-						  <li> Adobe Photoshop</li>
-						  <li> Adobe indesign</li>
-						  <li> Git </li>
+		  <!-- table programming languages level -->
 
-					  </ol>
-
-
-				   <!-- table programming langages level -->
-
-			  <table border="1">
+		  <section>
+			  <table class="table">
 
 				  <tr>
 					  <th rowspan="2"> Languages</th>
@@ -76,7 +89,7 @@
 					  <td></td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 				  </tr>
 
@@ -85,7 +98,7 @@
 					  <td></td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 				  </tr>
 
@@ -94,14 +107,14 @@
 					  <td></td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 				  </tr>
 
 				  <tr>
 					  <td>C++</td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 					  <td></td>
 					  <td></td>
@@ -111,7 +124,7 @@
 					  <td>Bulma</td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 					  <td></td>
 				  </tr>
@@ -120,7 +133,7 @@
 					  <td>Docker</td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 					  <td></td>
 				  </tr>
@@ -129,35 +142,36 @@
 					  <td>Linux</td>
 					  <td></td>
 					  <td></td>
-					  <td>x</td>
+					  <td class="notecolor">x</td>
 					  <td></td>
 					  <td></td>
 				  </tr>
 
 
-				</table>
-			  
+			  </table>
+
 		  </section>
 
-
+		  <!-- work and experience section-->
 		  <section id="workexp">
-			  <h3>Work Experience</h3>
+			  <h2>Work Experience</h2>
 			  <p> 2015-2016 Account Manager TLS Contact France company <br/> 2018-2019 Library Instructor BHUMA Bibiothèque Humanité Université Lille3 <br/> 2018-2019 Socio-Cultural Animator LUC Lille Université Club  <br/> juin - aout 2014 Sales Executive Groupe Soummam Annaba</p>
 		  </section>
 
+		  <!-- publications section-->
 		  <section id="articles">
 
-			  <h3>Recent Articles</h3>
-			  <p> <a href="https://www.facebook.com/" > Facebook Article  </p>
-			  <p> <a href="https://stackoverflow.com/" > Python Article</p>
-			  <p> <a href="https://stackoverflow.com/" > Docker for Beginner Article </p>
-			  <p> <a href="https://github.com/meriemkadri/python" > Text-analyzer Python Article</p>
+			  <h2>Recent Articles</h2>
+				  <p> <a href="https://www.facebook.com/" > Facebook Article </a>  </p>
+				  <p> <a href="https://stackoverflow.com/" > Python Article </a>  </p>
+				  <p> <a href="https://stackoverflow.com/" > Docker for Beginner Article </a> </p>
+				  <p> <a href="https://github.com/meriemkadri/python" > Text-analyzer Python Article </a>  </p>
 
 		  </section>
 		
 	</article>
 	
-	<footer> <p> ©Copyright KADRI Meriem 2020 </p> </footer>
+	<footer> <p> ©Copyright KADRI Meriem 2020. </p> </footer>
 	
   </body>
 
